@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Producción de café con prácticas sustentables. Productos orgánicos y de impacto positivo">
+    <meta name="keywords" content="Café, Sustentabilidad, Orgánicos, Impacto Positivo, Cuidado de la Tierra">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <title>Das Kaff | Productos</title>
 </head>
 
@@ -22,7 +24,7 @@
             <a href="index.html" class="nav-link">Home</a>
             <a href="nosotros.html" class="nav-link_nosotros">Nosotros</a>
             <a href="productos.html" class="nav-link">Productos</a>
-            <a href="" class="nav-link">Contacto</a>
+            <a href="#contact" class="nav-link">Contacto</a>
         </nav>    
     </header>
 
@@ -76,20 +78,33 @@
     </div>   
 
 
-    <form>
+    <form id="contact">
         <div class="contacto">
-        <p>Estemos en contacto!</p>
-        <label>Nombre</label>
-        <input  class="inputForm" type="text" name="nombre" id="nombre">
-        <label>Mail</label>
-        <input class="inputForm" type="email" name="mail" id="mail"> <br>
+            <!--scroll to-->
+            <p>Estemos en contacto!</p>
+            <div class="inputGroup">
+                <div>
+                    <label>Nombre</label>
+                    <input class="inputForm" type="text" name="nombre" id="nombre">
+                </div>
+                <div>
+                    <label>Mail</label>
+                    <input class="inputForm" type="email" name="mail" id="mail">
+                </div>
+            </div>
 
-        <label>Teléfono</label>
-        <input class="inputForm" type="number" name="telefono">
-        <label>País</label>
-        <input class="inputForm" type="text" name="pais"><br>
+            <div class="inputGroup">
+                <div>
+                    <label>Teléfono</label>
+                    <input class="inputForm" type="number" name="telefono">
+                </div>
+                <div>
+                    <label>País</label>
+                    <input class="inputForm" type="text" name="pais"><br>
+                </div>
+            </div>
 
-        <button>Enviar</button>
+            <button class="boton">Enviar</button>
         </div>
     </form>
 
